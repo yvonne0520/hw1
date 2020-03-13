@@ -20,7 +20,6 @@ with open(cwb_filename) as csvfile:
     mycsv = csv.DictReader(csvfile)
     header = mycsv.fieldnames
     for row in mycsv:
-       # data.append(row)
         data_id.append(row['station_id'])
         data_pre.append(float(row['PRES']))
 #=======================================
